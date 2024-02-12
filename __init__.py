@@ -11,7 +11,7 @@ def hello_world():
     return render_template('hello.html') #comm12
 @app.route("/contact/")
 def MaPremiereAPI():
-    return "<h2>contact.html</h2>" 
+    return render_template("contact.html") 
 @app.route('/paris/')
 def meteo():
     response = urlopen('https://api.openweathermap.org/data/2.5/forecast/daily?q=Paris,fr&cnt=16&appid=bd5e378503939ddaee76f12ad7a97608')
